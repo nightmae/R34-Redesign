@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', Arial;
+    background-color: rgb(10, 10, 10);
+}
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+.static-page {
+    color:white;
+    display:flex;
+}
+.header {
+    background-color: rgb(152, 150, 150);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#inputBar {
+    display:flex;
+    position:absolute;
+    background-color: rgb(45, 44, 44);
+    box-shadow: rgb(10, 10, 10, 0.4); 
+    color:white;
+    border:transparent;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    font-size: 15px;
+    left:15%;
+    width: 28%;
+    top: 2%;
+    height: 3%;
+    animation: bounceIn 0.3s ease-out;
+}
+input::placeholder {
+    color:rgb(132, 132, 132);
+}
+#inputBar:focus {
+    outline: rgb(59, 59, 59);
+    box-shadow: rgb(10, 10, 10); 
+}
+#submit {
+    position:absolute;
+    background-color: rgb(45, 44, 44);
+    box-shadow: rgb(10, 10, 10, 0.4);
+    color:white;
+    border:transparent;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    left:44%;
+    top: 2%;
+    width: 8%;
+    animation: bounceIn 0.3s ease-out;
+}
+#submit:hover {
+    opacity: 0.9;
+    cursor:pointer;
+}
+#submit:active {
+    opacity:0.7;
+}
+#page-title {
+    position:absolute;
+    left: 3%;
+    top: 2.3%;
+    font-size: 26px;
+}
+#page-title:hover {
+    background-color:rgb(37, 36, 36);
+    border-radius: 6px;
+    padding:4px;
+    cursor:pointer;
+}
+
+.sections {
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    right: 3%;
+    top: 4.5%;
+    transform: translateY(-50%);
+  }
+  
+  .section-item {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .section-item:hover {
+    background-color:rgb(37, 36, 36);
+    border-radius: 6px;
+  }
+
+#sbMenu {
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    overflow: auto;
+    top: 15%;
+}
+#sbMenu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    margin-top: 1.4%;
+    cursor: pointer;
+    z-index: 50;
+    animation: expands 0.7s ease-out
+  }
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    margin-top: 5px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.cr{
+    color: rgb(111, 28, 111);
+}
+.char {
+    color:green;
+}
+.art {
+    color:orange;
+}
+.gen {
+    color:rgb(84, 84, 199);
+}
+.meta {
+    color:rgb(176, 176, 50);
+}
+.crT, .artT, .charT, .genT, .metT {
+    font-size: 12px;
+}
+.NutT {
+    text-align:left;
+    font-size: 12px;
+}
+.semen {
+    font-size: 14px;
+}
+.resized {
+    position:Absolute;
+    background-color:rgb(37, 36, 36);
+    border-radius: 6px;
+    padding: 8px;
+    left: 21%;
+    top: 10%;
+}
+img {
+    position:Absolute;
+    height: 600px;
+    width: 600px;
+    left: 20%;
+    top: 15%;
+}
+.mainStat {
+    font-size: 16px;
+}
+.statistics {
+    font-size: 14px;
+}
+.relatedPost {
+    font-size:16px;
+}
+.relatedPosts p {
+    font-size: 14px;
+}
+.edit {
+    position:Absolute;
+    left: 20%;
+    top: 97%;
+    font-size: 18px;
+}
+.commsAm {
+    position:Absolute;
+    left: 20%;
+    top: 100%;
+    font-size: 14px;
+}
+.chicks {
+    position:Absolute;
+    left: 20%;
+    top: 105%;
+    font-size: 20px;
+}
+.Hyperlink {
+    color:white;
+    text-decoration:none;
+}
+
+
+/* ANIMATIONS */
+@keyframes expands {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    10%,
+    20% {
+      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    40%,
+    60%,
+    80% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  

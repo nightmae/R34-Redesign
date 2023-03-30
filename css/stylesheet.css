@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', Arial;
+    background-color: rgb(10, 10, 10);
+}
+.static-page {
+    color:white;
+    display:flex;
+}
+.R34 {
+    display:flex;
+    position:absolute;
+    left:30%;
+    top: 45%;
+}
+#inputBar {
+    display:flex;
+    position:absolute;
+    background-color: rgb(45, 44, 44);
+    box-shadow: rgb(10, 10, 10, 0.4); 
+    color:white;
+    border:transparent;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    left:30%;
+    top: 50%;
+    width: 28%;
+    height: 3%;
+    animation: bounceIn 0.3s ease-out;
+}
+input::placeholder {
+    color:rgb(132, 132, 132);
+}
+#inputBar:focus {
+    outline: rgb(59, 59, 59);
+    box-shadow: rgb(10, 10, 10); 
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 8;
+    display: none;
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .dropdown.show {
+    display: block;
+  }
+
+#submit {
+    position:absolute;
+    background-color: rgb(45, 44, 44);
+    box-shadow: rgb(10, 10, 10, 0.4);
+    color:white;
+    border:transparent;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    left:40%;
+    top: 56%;
+    width: 8%;
+    animation: bounceIn 0.3s ease-out;
+}
+#submit:hover {
+    opacity: 0.9;
+}
+#submit:active {
+    opacity:0.7;
+}
+.woman {
+    display:flex;
+    position:absolute;
+    padding: 10px;
+    left:39%;
+    top: 20%;
+    font-size: 36px;
+    animation: bounceIn 0.3s ease-out;
+}
+
+.postAmount {
+display:flex;
+ position:absolute;
+ padding: 10px;
+ left:31.5%;
+ top: 60%;
+ font-size: 14px;
+ animation: bounceIn 0.3s ease-out;
+}
+.womenPosts {
+    display:flex;
+    position:absolute;
+    padding: 10px;
+    left:38%;
+    top: 70%;
+    font-size: 30px;
+   }
+.TOS {
+    position:absolute;
+    text-align:Center;
+    padding: 10px;
+    left:25.5%;
+    top: 83%;
+    font-size: 12px;
+    animation: bounceIn 0.3s ease-out;
+   }
+.tos, .contact, .dmca {
+    color: rgb(196, 196, 55);
+}
+.tos, .contact, .dmca {
+    cursor:pointer;
+    opacity: 0.8;
+}
+
+/* ANIMATIONS */
+
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    40% {
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+  
+    80% {
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .bounceIn {
+    animation-duration: calc(var(--animate-duration) * 0.75);
+    animation-name: bounceIn;
+  }
+  .admir {
+    position:absolute;
+    top: 95%;
+  }
